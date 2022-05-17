@@ -1,5 +1,9 @@
 // 合并规则
 const { merge } = require("webpack-merge");
+// 错误提示插件
+const FriendlyErrorsWebpackPlugin = require("friendly-errors-webpack-plugin");
+// eslint插件
+const ESLintPlugin = require("eslint-webpack-plugin");
 // 导入基础配置
 const { baseConfig } = require("./webpack.config.base");
 module.exports = merge(baseConfig, {
@@ -18,4 +22,16 @@ module.exports = merge(baseConfig, {
     // 启动时打开浏览器
     open: true,
   },
+  // 插件配置
+  plugins: [
+    new FriendlyErrorsWebpackPlugin(),
+    new ESLintPlugin({
+      fix: true,
+      extensions: ["js", "ts", "tsx", "json"],
+      exclude: "/node_modules/",
+    }),
+  ],
+  optimization: {
+    minimize: true,
+  }
 });

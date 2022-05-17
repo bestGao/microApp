@@ -1,3 +1,6 @@
 baseApp/node_modules/
 reactApp/node_modules/
 vueApp/node_modules/
+reactApp/dist/
+vueApp/dist/
+baseApp/dist/

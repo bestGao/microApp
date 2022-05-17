@@ -1,6 +1,5 @@
 // src/app.jsx
 import React from "react";
-import { useEffect } from "react";
 import "./App.less";
 
 function App() {
