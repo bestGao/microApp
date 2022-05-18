@@ -4,7 +4,7 @@ import "./App.less";
 function App() {
   return (
     <div className="App">
-      <header className="App-header">react子应用</header>
+      <header className="App-header">react子应用 测试</header>
     </div>
   );
 }
