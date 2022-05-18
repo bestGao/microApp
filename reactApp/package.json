@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "lint": "echo \"success\"",
+    "lint": "eslint --ext .js,.vue src",
     "prepare": "husky install",
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack --config ./webpack/webpack.config.prod.js",
