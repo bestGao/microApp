@@ -8,7 +8,7 @@
     "prepare": "husky install",
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack --config ./webpack/webpack.config.prod.js",
-    "server": "webpack server --config ./webpack/webpack.config.dev.js"
+    "dev": "webpack server --config ./webpack/webpack.config.dev.js"
   },
   "keywords": [],
   "author": "",

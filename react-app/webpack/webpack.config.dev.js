@@ -14,13 +14,16 @@ module.exports = merge(baseConfig, {
   // webpack-dev-server 的一下配置，webpack-dev-server 会提供一个本地服务(serve)
   devServer: {
     // host
-    host: "127.0.0.1",
+    // host: "127.0.0.1",
     // 端口
-    port: 8000,
+    port: 3002,
     // 热更新
     hot: true,
     // 启动时打开浏览器
     open: true,
+    headers: {
+      "Access-Control-Allow-Origin": "*",
+    },
   },
   // 插件配置
   plugins: [
@@ -33,5 +36,5 @@ module.exports = merge(baseConfig, {
   ],
   optimization: {
     minimize: true,
-  }
+  },
 });
