@@ -14,8 +14,11 @@ module.exports = {
   assetsDir: 'static', //  outputDir的静态资源(js、css、img、fonts)目录
   productionSourceMap: false, // 如果你不需要生产环境的 source map，可以将其设置为 false 以加速生产环境构建。
   devServer: {
-    port: 9020, // 端口
+    port: 3001, // 端口
     open: false, // 启动后打开浏览器
+    headers: {
+      "Access-Control-Allow-Origin": "*",
+    },
     disableHostCheck: true, // 绕过主机检查，解决Invalid Host header问题
     overlay: {
       //  当出现编译器错误或警告时，在浏览器中显示全屏覆盖层
