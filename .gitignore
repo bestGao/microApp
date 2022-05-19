@@ -1,8 +1,6 @@
 base-app/node_modules/
 react-app/node_modules/
 vue-app/node_modules/
-vite-app/node_modules/
 react-app/dist/
 vue-app/dist/
 base-ppp/dist/
-vite-app/dist/

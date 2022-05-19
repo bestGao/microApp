@@ -52,7 +52,7 @@ const baseConfig = {
   plugins: [
     new HtmlWebpackPlugin({
       // title 配置
-      title: "Webpack V5 + React",
+      title: "子应用React",
       // 模板导入
       template: resolvePath("../public/index.html"),
       // 名称为
