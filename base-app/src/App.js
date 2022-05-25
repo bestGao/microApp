@@ -1,36 +1,8 @@
-import { Routes, Route, Link } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import MyPage from "./pages/MyPage.js";
+import Home from './pages/Home/Home.tsx'
+import About from './pages/About/About.tsx'
 import "./App.css";
-
-function Home() {
-  return (
-    <>
-      <main>
-        <h2>基座应用</h2>
-        <p>You can do this, I believe in you.</p>
-      </main>
-      <nav>
-        <Link to="/my-page">跳转到子应用</Link>
-        <br />
-        <Link to="/about">About</Link>
-      </nav>
-    </>
-  );
-}
-
-function About() {
-  return (
-    <>
-      <main>
-        <h2>Who are we?</h2>
-        <p>That feels like an existential question, don't you think?</p>
-      </main>
-      <nav>
-        <Link to="/">Home</Link>
-      </nav>
-    </>
-  );
-}
 
 function App() {
   return (
